@@ -16,7 +16,4 @@ services:
       - "video"
       - "render"
     volumes:
-      - retroarch_data:/.config/retroarch
-
-volumes:
-  retroarch_data:
+      - ${APP_DATA_DIR}/retroarch/data/:/.config/retroarch
