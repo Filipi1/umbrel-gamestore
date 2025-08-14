@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: gamestore-retroarch
+name: RetroArch Web
+tagline: 
+icon: https://yt3.ggpht.com/ytc/AIdro_mJUDjfRE1VV1FWGHdh3Skd-eG2mImJeN9HQcGeHnq4eQ=s68-c-k-c0x00ffffff-no-rj
+category: Emulators
+version: "1.17.0"
+port: 6901
+description: >
+  RetroArch is a frontend for emulators, game engines and media players.
+  It provides a unified and extensible interface for a wide range of emulators and media players.
+website: https://www.retroarch.com/
+submitter: Filipi1
+submission:
+repo:
+support: 
+gallery:
+  - https://5856039.fs1.hubspotusercontent-na1.net/hubfs/5856039/dockerhub/image-screenshots/retroarch.png
+releaseNotes: >
+  
+dependencies: []
+path: ""
+defaultUsername: "kasm_user"
+defaultPassword: "retropassword"
