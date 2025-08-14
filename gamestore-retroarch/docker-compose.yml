@@ -15,3 +15,6 @@ services:
     group_add:
       - "video"
       - "render"
+    volumes:
+      - ${APP_DATA_DIR}/retroarch/data/:/home/kasm_user
+    privileged: true
