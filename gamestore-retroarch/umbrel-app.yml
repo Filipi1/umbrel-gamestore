@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: gamestore-retroarch
 name: RetroArch Web
-tagline: 
+tagline: RetroArch Web is a web-based frontend for emulators, game engines and media players.
 icon: https://yt3.ggpht.com/ytc/AIdro_mJUDjfRE1VV1FWGHdh3Skd-eG2mImJeN9HQcGeHnq4eQ=s68-c-k-c0x00ffffff-no-rj
 category: Emulators
 version: "1.17.0"
@@ -10,14 +10,14 @@ description: >
   RetroArch is a frontend for emulators, game engines and media players.
   It provides a unified and extensible interface for a wide range of emulators and media players.
 website: https://www.retroarch.com/
-submitter: Filipi1
+submitter: GameStore
 submission:
 repo:
 support: 
 gallery:
   - https://5856039.fs1.hubspotusercontent-na1.net/hubfs/5856039/dockerhub/image-screenshots/retroarch.png
 releaseNotes: >
-  
+  - Initial release
 dependencies: []
 path: ""
 defaultUsername: "kasm_user"
