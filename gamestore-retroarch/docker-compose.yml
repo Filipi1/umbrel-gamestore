@@ -2,7 +2,8 @@ services:
   retroarch:
     image: kasmweb/retroarch:1.17.0-rolling-daily
     container_name: retroarch_1
-    user: "1000:1000"
+    user: "0:0"
+    command: ["/bin/bash","-lc","chown -R 1000:1000 /home/kasm-user && /dockerstartup/vnc_startup.sh --wait"]
     ports:
       - "6901:6901"
       - "5901:5901"
