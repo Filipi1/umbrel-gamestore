@@ -1,0 +1,22 @@
+services:
+  retroarch:
+    image: kasmweb/retroarch:1.17.0-rolling-daily
+    container_name: retroarch_1
+    ports:
+      - "6901:6901"
+      - "5901:5901"
+    restart: unless-stopped
+    shm_size: "1g"
+    environment:
+      - TZ=America/Fortaleza
+      - VNC_PW=retropassword
+    devices:
+      - /dev/dri:/dev/dri
+    group_add:
+      - "video"
+      - "render"
+    volumes:
+      - retroarch_data:/.config/retroarch
+
+volumes:
+  retroarch_data:
