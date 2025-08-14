@@ -4,7 +4,7 @@ name: RetroArch Web
 tagline: RetroArch Web is a web-based frontend for emulators, game engines and media players.
 icon: https://yt3.ggpht.com/ytc/AIdro_mJUDjfRE1VV1FWGHdh3Skd-eG2mImJeN9HQcGeHnq4eQ=s68-c-k-c0x00ffffff-no-rj
 category: Emulators
-version: "1.17.0"
+version: "1.16.0"
 port: 6901
 description: >
   RetroArch is a frontend for emulators, game engines and media players.
