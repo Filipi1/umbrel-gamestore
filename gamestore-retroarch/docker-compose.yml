@@ -15,5 +15,3 @@ services:
     group_add:
       - "video"
       - "render"
-    volumes:
-      - ${APP_DATA_DIR}/retroarch/data/:/.config/retroarch
