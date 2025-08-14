@@ -2,7 +2,7 @@ manifestVersion: 1
 id: gamestore-romm
 category: Emulators
 name: RomM
-version: "4.0.2"
+version: "4.0.1"
 tagline: A beautiful, powerful, self-hosted rom manager
 description: >-
   👾 RomM (ROM Manager) allows you to scan, enrich, browse and play your game collection with a clean and responsive interface.
@@ -26,11 +26,11 @@ repo: https://github.com/rommapp/romm
 support: https://github.com/rommapp/romm/issues
 port: 4002
 submitter: GameStore
-submission:
+submission: https://github.com/getumbrel/umbrel-apps/pull/2020
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://i.redd.it/romm-4-0-2-release-v0-116a66prznab1.png?width=1454&format=png
+  - https://i.redd.it/romm-4-0-2-release-v0-zkamjzeuznab1.png?width=1454&format=png
+  - https://i.redd.it/romm-4-0-2-release-v0-316a66prznab1.png?width=1454&format=png
 dependencies: []
 path: ""
 defaultUsername: ""
