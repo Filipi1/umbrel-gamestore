@@ -1,6 +1,6 @@
 services:
   retroarch:
-    image: kasmweb/retroarch:1.17.0-rolling-daily
+    image: kasmweb/retroarch:1.16.0
     container_name: retroarch_1
     user: "0:0"
     command: ["/bin/bash","-lc","chown -R 1000:1000 /home/kasm-user && /dockerstartup/vnc_startup.sh --wait"]
@@ -8,7 +8,7 @@ services:
       - "6901:6901"
       - "5901:5901"
     restart: unless-stopped
-    shm_size: "1g"
+    shm_size: "8g"
     environment:
       - TZ=America/Fortaleza
       - VNC_PW=retropassword
