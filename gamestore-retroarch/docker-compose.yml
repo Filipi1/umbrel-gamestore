@@ -16,5 +16,5 @@ services:
       - "video"
       - "render"
     volumes:
-      - ${APP_DATA_DIR}/data:/home/kasm_user
+      - ${APP_DATA_DIR}/data:/home/kasm-user
     privileged: true
