@@ -7,6 +7,15 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+    command: >
+      sh -c "
+        if [ ! -f /var/www/html/config/appSettings.php ]; then
+          mkdir -p /var/www/html/config &&
+          cp /var/www/html/app/config/appSettings.sample.php /var/www/html/config/appSettings.php &&
+          chown -R www-data:www-data /var/www/html/config
+        fi &&
+        apache2-foreground
+      "
     environment:
       - LEANTIME_DB_HOST=leantime_db_1
       - LEANTIME_DB_USER=leantime
@@ -18,6 +27,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/var/www/html/userfiles
       - ${APP_DATA_DIR}/data/config:/var/www/html/config
+      - ${APP_DATA_DIR}/data/app:/var/www/html/app
+    user: "33:33"
     depends_on:
       - db
     networks:
