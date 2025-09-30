@@ -1,0 +1,80 @@
+manifestVersion: 1
+id: gamestore-leantime
+category: Productivity
+name: Leantime
+version: "2.3.15"
+tagline: Open source project management system for lean teams
+description: >-
+  🚀 Leantime is a lean project management system for small teams and startups. 
+  It helps you manage projects, tasks, and ideas with a clean, intuitive interface.
+
+  📋 **Key Features:**
+    - Project and task management
+    - Time tracking and reporting
+    - Idea management and innovation boards
+    - Client management
+    - Team collaboration tools
+    - Kanban boards and Gantt charts
+    - File attachments and comments
+    - Custom fields and templates
+    - Multi-language support
+    - REST API for integrations
+
+  🎯 **Perfect for:**
+    - Small teams and startups
+    - Agile development
+    - Project planning and tracking
+    - Client work management
+    - Innovation and idea tracking
+
+  💡 **Why Leantime?**
+    - Open source and self-hosted
+    - No vendor lock-in
+    - Privacy-focused
+    - Lightweight and fast
+    - Easy to customize and extend
+
+developer: leantime
+website: https://leantime.io/
+repo: https://github.com/Leantime/leantime
+support: https://github.com/Leantime/leantime/issues
+port: 8080
+submitter: GameStore
+submission: 
+gallery:
+  - https://leantime.io/wp-content/uploads/2021/03/leantime-dashboard.png
+  - https://leantime.io/wp-content/uploads/2021/03/leantime-kanban.png
+  - https://leantime.io/wp-content/uploads/2021/03/leantime-gantt.png
+  - https://leantime.io/wp-content/uploads/2021/03/leantime-timesheets.png
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
+releaseNotes: >-
+  Leantime 2.3.15 brings several improvements and bug fixes:
+
+  **New Features:**
+    - Enhanced project templates
+    - Improved mobile responsiveness
+    - Better time tracking accuracy
+    - New dashboard widgets
+
+  **Improvements:**
+    - Performance optimizations
+    - Better error handling
+    - Enhanced security features
+    - Improved user experience
+
+  **Bug Fixes:**
+    - Fixed calendar synchronization issues
+    - Resolved file upload problems
+    - Fixed notification delivery
+    - Corrected time zone handling
+
+  **Technical Updates:**
+    - Updated dependencies
+    - Improved database performance
+    - Enhanced API endpoints
+    - Better caching mechanisms
+
+  For full release notes, visit: https://github.com/Leantime/leantime/releases

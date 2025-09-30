@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  leantime:
+    image: leantime/leantime:2.3.15
+    container_name: leantime_1
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - LEANTIME_DB_HOST=leantime_db_1
+      - LEANTIME_DB_USER=leantime
+      - LEANTIME_DB_PASSWORD=${DB_PASSWORD:-leantime123}
+      - LEANTIME_DB_DATABASE=leantime
+      - LEANTIME_SESSION_PASSWORD=${SESSION_PASSWORD:-leantime_session_key}
+      - LEANTIME_ENCRYPTION_KEY=${ENCRYPTION_KEY:-leantime_encryption_key}
+      - LEANTIME_APP_URL=http://localhost:8080
+    volumes:
+      - ${APP_DATA_DIR}/data/uploads:/var/www/html/userfiles
+      - ${APP_DATA_DIR}/data/config:/var/www/html/config
+    depends_on:
+      - db
+    networks:
+      - leantime_network
+
+  db:
+    image: mariadb:10.11
+    container_name: leantime_db_1
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD:-root123}
+      - MYSQL_DATABASE=leantime
+      - MYSQL_USER=leantime
+      - MYSQL_PASSWORD=${DB_PASSWORD:-leantime123}
+    volumes:
+      - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
+    networks:
+      - leantime_network
+
+networks:
+  leantime_network:
+    driver: bridge
